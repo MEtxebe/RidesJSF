@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+<f:view>
+    <h:head>
+        <title>JavaServer Faces Rides App</title>
+        <h:outputStylesheet library="css" name="style.css" />
+    </h:head>
+    <h:body>
+        <h:form id="menuForm">
+         <img src="http://www.ehu.eus/documents/340468/5849813/Biling%C3%BCe_positivo_baja.jpg" width="400" height="70" style="text-align: center; margin-bottom: 100px;" />
+        
+            <!-- Título del menú -->
+            <h1  style="text-align: center; margin-bottom: 30px; color: #333; font-weight: bold; padding: 10px 0;">Select Option</h1>
+
+            <!-- Botones del menú -->
+			<h:commandButton class="button" value="Create Ride" action="create" />
+			<h:commandButton class="button" value="Query Rides" action="query" />
+        </h:form>
+    </h:body>
+</f:view>
+</html>

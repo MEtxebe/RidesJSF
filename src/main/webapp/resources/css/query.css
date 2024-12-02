@@ -1,0 +1,93 @@
+/* Estilo para el formulario */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 20px;
+}
+
+#nireForm {
+   max-width: 500px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+/* Estilo para el título */
+#nireForm h3 {
+   text-align: center;
+   font-size: 24px;
+   color: #333;
+   margin-bottom: 30px;
+}
+
+/* Estilo para la tabla */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+}
+
+td {
+   padding: 10px;
+   vertical-align: middle;
+}
+
+/* Estilo para los menús desplegables */
+select, .ui-selectonemenu {
+   width: 200px !important;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 14px;
+}
+
+/* Estilo para el calendario */
+.ui-calendar {
+   width: 100%;
+}
+
+.ui-datepicker {
+   margin-top: 10px;
+}
+
+/* Estilo para los botones */
+.ui-button, input[type="submit"], button {
+   display: inline-block;
+   padding: 10px 20px;
+   margin: 5px;
+   font-size: 16px;
+   color: white;
+   background-color: #007BFF;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.ui-button:hover, input[type="submit"]:hover, button:hover {
+   background-color: #0056b3;
+}
+
+/* Centrar los botones */
+p {
+   text-align: center;
+}
+
+/* Estilo para los mensajes */
+#mezuak {
+   text-align: center;
+   margin-top: 20px;
+   color: blue;
+}
+
+/* Estilos específicos para PrimeFaces */
+.ui-selectonemenu-label {
+   width: auto !important;
+}
+
+.ui-calendar .ui-datepicker {
+   margin: auto;
+}
+
+.ui-datepicker table {
+   margin: 0 auto;
+}

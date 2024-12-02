@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://java.sun.com/jsf/facelets"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:p="http://primefaces.org/ui">
+<ui:composition>
+<f:view>
+<h:head>
+<title>Create Ride aplikazioa</title>
+<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+<h:body>
+	<h:form id="nireForm">
+		<h3> Create Ride</h3>
+		<table>
+		<tr>
+		<td>Depart City:</td>
+		<td>
+			<h:inputText id="depart" value="#{bean.departCity}">
+			</h:inputText></td>
+		</tr>
+		
+		<tr>
+			<td>Arrival City:</td>
+			<td>
+				<h:inputText id="arrival" value="#{bean.arrivalCity}"></h:inputText>
+			</td>
+		</tr>
+		
+				<tr>
+		<td>Number of Seats:</td>
+		<td>
+			<h:inputText id="seats" value="#{bean.numberOfSeats}"></h:inputText></td>
+		</tr>
+		
+		<tr>
+			<td>Price:</td>
+			<td>
+				<h:inputText id="price" value="#{bean.price}"></h:inputText>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>Data:</td>
+			<td><p:calendar id="data" value="#{bean.date}" navigator="false" mode="inline">
+			<p:ajax event="dateSelect" listener="#{create.onDateSelect}" update="mezuak"></p:ajax>
+			</p:calendar></td>
+		</tr>
+		</table>
+		<p>
+			<h:commandButton value="Create Ride" action="#{bean.createRide}" />
+			<h:commandButton value="Close" immediate="true" action="close"></h:commandButton>
+		</p>
+		<h:messages id="mezuak" style="color:blue"/>
+		
+
+	</h:form>
+</h:body>
+</f:view>
+</ui:composition>
+</html>

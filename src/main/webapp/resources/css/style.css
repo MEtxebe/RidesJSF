@@ -1,0 +1,52 @@
+/* Estilo para el formulario de menú */
+#menuForm {
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+/* Estilo específico para el título h1 dentro del formulario */
+#menuForm > h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 90000px !important;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* Estilo común para ambos botones */
+#menuForm h\\:commandButton {
+    display: block;
+    width: 80%;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto 30px auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* Estilo de los botones */
+input[type="submit"],button {
+    display: block;
+    width: 80%;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambia el color del botón al pasar el ratón */
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+}
